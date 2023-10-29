@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng-GB">
   <head>
-    <meta charset="UTF-8" />
-    <title>My HTML Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-
   <body>
-    <div>
-      <p>
-        <b>My Purpose in this program is to become a fullstack developer </b>
+    <!---Header section-->
+    <div class="row row1">
+      <div class="title-container">
+        <h1>Jeanne d'Arc NYIRAMWIZA</h1>
+        <h2>Front end Engineer</h2>
+        <h3>My Purpose in the Frontend program</h3>
+      </div>
+    </div>
+
+    <!----Description section-->
+    <div class="row row2">
+      <p class="intro">
+        I joined the <em><q>Azubi Africa</q></em>
+        <b>Frontend Program</b> because I want to learn how to <u>design</u>,
+        <u>build</u>, and <u>maintain</u> the user interface of websites and web
+        applications, ensuring they are functional, accessible, and visually
+        appealing.
       </p>
-      <p>
-        <u
-          >I aspire to be a senior web fullstack developer in
-          <i>the next 5 years</i></u
-        >
-      </p>
+
+      <pre> Frontend developers play a crucial role in delivering a positive <q>user experience</q> and are essential in the creation of modern digital products.</pre>
+    </div>
+
+    <!---Projects section-->
+    <div class="row row3">
+      <h3>Projects</h3>
+      <ul class="project-list">
+        <li class="project-item">
+          <figure>
+            <div class="image">
+              <img src="images/icon.png" alt="Project 1" />
+            </div>
+            <div>
+              <figcaption>
+                <h4>Portfolio</h4>
+                <p>Personal Website</p>
+                <a href="https://www.project1.com" target="_blank"
+                  >Visit Portfolio Project</a
+                >
+              </figcaption>
+            </div>
+          </figure>
+        </li>
+        <li class="project-item">
+          <figure>
+            <img src="images/project.png" alt="Project 2" />
+            <figcaption>
+              <h4>CV</h4>
+              <p>CV Writing</p>
+              <a href="https://bit.ly/479BTEZ" target="_blank"
+                >Visit CV Writing Project</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
