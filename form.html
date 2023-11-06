@@ -4,48 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-    <div>
-        <img src="images/icon.png"/>
-    </div>
-    <div>
-        <h1>Register Here</h1>
-        <form>
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" placeholder="firstName" autocomplete="on" required="true"/>
-            <br>
-            <br>
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" placeholder="lastName" autocomplete="on" required="true"/>
-            <br>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="email" autocomplete="on" required="true"/>
-            <br>
-            <br>
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="password"  required="true"/>
-            <br>
-            <br>
-            <label for="linkedIn">LinkedIn Profile</label>
-            <input type="url" name="linkedIn" placeholder="LinkedIn"  required="true"/>
-            <br>
-            <br>
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text" name="phoneNumber" placeholder="Phone Number"  required="true"/>
-            <br>
-            <br>
-            Age range:
-            <input type="checkbox" id="below 18" name="below 18" value="below 18"> 
-            <label for="below 18"><18</label>
+    <div class="container">
+        <div class="image">
+            <!-- <img src="images/register.jpg"/> -->
+        </div>
+        <div class="form">
+            <h1>Register Here</h1>
+            <form >
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="First Name" autocomplete="on" required="true">
+                    <br>
+                    <br>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Last Name" autocomplete="on" required="true">
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email" autocomplete="on" required="true">
+                    <br>
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password"  placeholder="Password" required="true" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    
+                    <br>
+                    <br>
+                    <label for="linkedIn">LinkedIn Profile</label>
+                    <input type="url" name="linkedIn" placeholder="LinkedIn" required="true">
+                    <br>
+                    <br>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="phoneNumber" placeholder="Phone Number" required="true">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Additional Information</b></legend>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="rda">Rwanda</option>
+                        <option value="knya">Kenya</option>
+                        <option value="drc">DR Congo</option>
+                        <option value="tz">Tanzania</option>
+                        <option value="brdi">Burundi</option>
+                    </select>
+            
+                    <br>
+                    <br>
+                    Gender:
+                    <input type="radio" id="female" name="gender" value="female"> 
+                    <label for="female">Female</label>
+            
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
 
-            <input type="checkbox" id="18-25" name="18-25" value="18-25">
-            <label for="18-25">18-25</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <br>
+                    <br>
+                    <label for="profilePicture">Upload your picture here:</label>
+                    <input type="file" id="profilePicture" name="profilePicture">
+                    <br>
+                    <br>
+                    <label for="dateOfBirth">Date of birth:</label>
+                    <input type="date" id="dateOfBirth" name="Date of Birth" value="Date of Birth">
+                    <br>
+                    <br>
+                    <label for="hobbies">Hobbies</label>
+                    <div class="hobbies-checkboxes">
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
 
-            <input type="checkbox" id=">25" name=">25" value=">25">
-            <label for=">25">>25</label>
-        </form>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox" id="travel" name="hobbies" value="travel">
+                    <label for="travel">Travel</label>
+                </div>
+                <br>
+                <br>
+                <label for="comments"><b>Additional Comments or Feedback?</b></label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments or feedback here"></textarea>
+                </fieldset>
+                <br>
+                <button type="button" onclick="alert('The form has been submitted successfully!')">Submit</button>
+            </form>
+            
+        </div>
     </div>
+    
 </body>
 </html>
