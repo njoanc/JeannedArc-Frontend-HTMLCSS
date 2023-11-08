@@ -158,3 +158,6 @@ body {
   background-color: #0056b3; 
 }
 
+ul.square-bullets{
+  list-style-type:square;
+}
