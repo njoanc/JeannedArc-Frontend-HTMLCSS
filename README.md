@@ -112,7 +112,7 @@ You need to complete the following tasks within the HTML file:
 
 Task 1: Form Basics
 
-1. Within the `<body>` tag, create a `<form>`` that collects basic user information, such as name, email address, and age.
+1. Within the `<body>` tag, create a `<form>` that collects basic user information, such as name, email address, and age.
 2. Implement appropriate form fields for each piece of information (text input for name and email, and number input for age).
 3. Use the appropriate HTML attributes to ensure that the form fields are required and have proper labels.
 
@@ -140,6 +140,7 @@ Task 6: Styling
 
 1. Apply CSS to style the form and make it visually appealing.
 2. Use CSS to create hover effects for form elements and ensure proper alignment of form fields.
+
 Step 4: Commit and Push to GitHub
 
 1. Add the modified HTML file to your local Git repository.
