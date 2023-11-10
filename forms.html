@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png" />
     <title>User Registration</title>
     <link rel="stylesheet" href="styles/index.css" />
 </head>
@@ -37,13 +38,21 @@
                     <br>
                     <br>
                     <label for="phoneNumber">Phone Number</label>
-                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required="true">
+                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required="true" min="10" max="10">
+                    <br>
+                    <br>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="0" placeholder="Age" required="true">
+                    <br>
+                    <br>
+                    <label for="dateOfBirth">Date of birth:</label>
+                    <input type="date" id="dateOfBirth" name="Date of Birth" value="Date of Birth">
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend><b>Additional Information</b></legend>
                     <label for="country">Country</label>
-                    <select id="country" name="country" size="3">
+                    <select id="country" name="country" size="2">
                         <option value="rda">Rwanda</option>
                         <option value="knya">Kenya</option>
                         <option value="drc">DR Congo</option>
@@ -68,10 +77,7 @@
                     <br>
                     <label for="profilePicture">Upload your picture here:</label>
                     <input type="file" id="profilePicture" name="profilePicture">
-                    <br>
-                    <br>
-                    <label for="dateOfBirth">Date of birth:</label>
-                    <input type="date" id="dateOfBirth" name="Date of Birth" value="Date of Birth">
+                    
                     <br>
                     <br>
                     <label for="hobbies">Hobbies</label>
@@ -93,7 +99,6 @@
                 <label for="comments"><b>Additional Comments or Feedback?</b></label>
                 <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments or feedback here"></textarea>
                 </fieldset>
-                <br>
                 <button type="button" onclick="alert('The form has been submitted successfully!')">Submit</button>
             </form>
             
