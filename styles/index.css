@@ -145,7 +145,7 @@ body {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: rgb(75, 94, 116);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -154,7 +154,7 @@ body {
 }
 
 .form button:hover {
-  background-color: #0056b3; 
+  background-color: rgb(54, 65, 40); 
 }
 
 ul.square-bullets{
