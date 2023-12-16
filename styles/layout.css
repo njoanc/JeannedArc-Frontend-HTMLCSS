@@ -72,7 +72,7 @@ nav a {
   justify-content: space-between;
 }
 
-#about{
+.about{
   background: linear-gradient(
     to right,
     rgba(236, 203, 203, 0.8) 20%,
@@ -84,7 +84,7 @@ nav a {
   padding: 10px 5px 10px 10px; 
 }
 
-#mission {
+.mission {
   background: linear-gradient(
     to right,
     rgba(236, 203, 203, 0.8) 20%,
@@ -95,7 +95,7 @@ nav a {
   height: 80px; 
 }
 
-#vision {
+.vision {
   height: calc(2 * 80px); 
   background: linear-gradient(
     to right,
@@ -111,7 +111,7 @@ footer {
   margin-top: 20px;
   margin-bottom: 5px;
   display: flex;
-  padding: 35px 5px 35px 10px;
+  padding: 45px 5px 45px 10px;
   grid-row: 6;
   background: linear-gradient(to right, #c4b9c4, #936c8f);
   justify-content: center;
@@ -119,8 +119,7 @@ footer {
 }
 
 @media screen and (max-width: 00px) {
-  #mission,
-  #vision {
+  main{
     padding: 10px; 
   }
 }
