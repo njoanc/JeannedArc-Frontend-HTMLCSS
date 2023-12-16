@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-  margin: 10px;
+  margin: 10px 15px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: auto;
@@ -13,10 +13,10 @@ body {
 
 .companyInfo {
   display: flex;
-  padding: 5px 5px 20px 10px;
+  padding: 4px 5px 3px 10px;
   justify-content: space-between;
   grid-row: 1;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 20px;
   background: linear-gradient(to right, #c4b9c4, #936c8f);
 }
@@ -37,7 +37,7 @@ body {
 
 header {
   background-color: #c4b9c4;
-  padding: 10px 5px 30px 10px;
+  padding: 5px 5px 10px 10px;
   flex-direction: row;
   text-align: center;
   grid-row: 2;
@@ -91,7 +91,7 @@ nav a {
     rgba(200, 202, 188, 0.5) 100%
   );
   margin-bottom: 20px;
-  padding: 5px 5px 55px 10px; 
+  padding: 15px 5px 80px 10px; 
   height: 80px; 
 }
 
@@ -103,18 +103,24 @@ nav a {
     rgba(224, 110, 201, 0.5) 60%,
     rgba(200, 202, 188, 0.5) 100%
   );
-  padding: 10px 5px 5px 10px;
+  padding: 15px 5px 0px 10px;
+  
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   display: flex;
-  padding: 10px 5px 30px 10px;
+  padding: 35px 5px 35px 10px;
   grid-row: 6;
   background: linear-gradient(to right, #c4b9c4, #936c8f);
   justify-content: center;
   
 }
 
-
-
+@media screen and (max-width: 00px) {
+  #mission,
+  #vision {
+    padding: 10px; 
+  }
+}
