@@ -28,8 +28,8 @@ body {
 
 .logo {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(
       to right,
       rgba(234, 227, 227, 0.8) 20%,
@@ -40,6 +40,18 @@ body {
   margin-right: 20px;
 }
 
+.slogan{
+  font-size: 1.5em;
+  color: #0d6b3a;
+  text-align: center;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    2px 2px 5px rgba(236, 129, 129, 0.5);
+   
+}
 header {
   background-color: #c4b9c4;
   padding: 5px 5px 10px 10px;
