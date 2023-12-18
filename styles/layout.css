@@ -5,6 +5,7 @@
 
 body {
   font-family: "Arial", sans-serif;
+  align-items: center;
 }
 
 .main {
@@ -116,7 +117,7 @@ footer {
   margin-top: 20px;
   margin-bottom: 5px;
   display: flex;
-  padding: 45px 5px 45px 10px;
+  padding: 30px 5px 20px 10px;
   grid-row: 6;
   background: linear-gradient(to right, #c4b9c4, #936c8f);
   justify-content: center;
